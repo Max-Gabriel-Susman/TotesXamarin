@@ -4,7 +4,8 @@ using UIKit;
 namespace totesXamarin.iOS
 {
     public partial class BrowseItemDetailViewController : UIViewController
-    {
+    { 
+       
         public ItemDetailViewModel ViewModel { get; set; }
         public BrowseItemDetailViewController(IntPtr handle) : base(handle) { }
 

@@ -1,4 +1,5 @@
 ﻿using UIKit;
+//using System;
 
 namespace totesXamarin.iOS
 {
@@ -9,6 +10,8 @@ namespace totesXamarin.iOS
         {
             // if you want to use a different Application Delegate class from "AppDelegate"
             // you can specify it here.
+            //Console.WriteLine("Hello world");
+
             UIApplication.Main(args, null, "AppDelegate");
         }
     }
