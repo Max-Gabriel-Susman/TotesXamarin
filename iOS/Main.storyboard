@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4024">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -32,7 +30,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="4231"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4050">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -56,19 +54,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gIs-ur-qbV">
-                                <rect key="frame" x="40" y="164" width="240" height="240"/>
+                                <rect key="frame" x="40" y="50.5" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gIs-ur-qbV" secondAttribute="height" multiplier="1:1" id="SGm-oW-OQF"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdV-s5-vpK">
-                                <rect key="frame" x="112" y="393" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jdV-s5-vpK">
+                                <rect key="frame" x="111.5" y="373.5" width="97" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOI-AB-jRd">
-                                <rect key="frame" x="122" y="403" width="97" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOI-AB-jRd">
+                                <rect key="frame" x="111.5" y="324" width="97" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -76,24 +73,26 @@
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDF-ZU-hL1">
-                                <rect key="frame" x="147" y="491" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDF-ZU-hL1">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-C7-6K3">
-                                <rect key="frame" x="157" y="501" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpa-C7-6K3">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="gIs-ur-qbV" firstAttribute="centerY" secondItem="4442" secondAttribute="centerY" id="1tx-Sh-78Y"/>
+                            <constraint firstItem="gIs-ur-qbV" firstAttribute="centerY" secondItem="4442" secondAttribute="centerY" multiplier="0.6" id="1tx-Sh-78Y"/>
                             <constraint firstItem="JYZ-yn-xc6" firstAttribute="centerX" secondItem="4442" secondAttribute="centerX" id="25w-eb-vVp"/>
                             <constraint firstItem="uDF-ZU-hL1" firstAttribute="centerY" secondItem="4442" secondAttribute="centerY" id="55O-qZ-bPI"/>
                             <constraint firstItem="cpa-C7-6K3" firstAttribute="width" secondItem="4442" secondAttribute="width" multiplier="0.14375" id="70b-QC-DyF"/>
                             <constraint firstItem="uDF-ZU-hL1" firstAttribute="centerX" secondItem="4442" secondAttribute="centerX" id="AfH-6K-dND"/>
+                            <constraint firstItem="jdV-s5-vpK" firstAttribute="centerY" secondItem="4442" secondAttribute="centerY" multiplier="1.375" id="B7K-x3-16K"/>
+                            <constraint firstItem="jdV-s5-vpK" firstAttribute="width" secondItem="4442" secondAttribute="width" multiplier="0.303125" id="DlF-jp-7nd"/>
                             <constraint firstItem="gIs-ur-qbV" firstAttribute="height" secondItem="4442" secondAttribute="height" multiplier="0.422535" id="FnN-dP-VMS"/>
-                            <constraint firstItem="XOI-AB-jRd" firstAttribute="centerY" secondItem="4442" secondAttribute="centerY" id="GQO-AX-cJK"/>
+                            <constraint firstItem="XOI-AB-jRd" firstAttribute="centerY" secondItem="4442" secondAttribute="centerY" multiplier="1.2" id="GQO-AX-cJK"/>
                             <constraint firstItem="gIs-ur-qbV" firstAttribute="centerX" secondItem="4442" secondAttribute="centerX" id="IQg-TP-E5b"/>
                             <constraint firstItem="JYZ-yn-xc6" firstAttribute="height" secondItem="4442" secondAttribute="height" multiplier="0.0528169" id="RM7-Ay-VAd"/>
                             <constraint firstItem="cpa-C7-6K3" firstAttribute="height" secondItem="4442" secondAttribute="height" multiplier="0.0528169" id="SUP-N4-iMd"/>
@@ -102,6 +101,8 @@
                             <constraint firstItem="JYZ-yn-xc6" firstAttribute="centerY" secondItem="4442" secondAttribute="centerY" id="caf-qJ-vkc"/>
                             <constraint firstItem="JYZ-yn-xc6" firstAttribute="width" secondItem="4442" secondAttribute="width" multiplier="0.14375" id="kIZ-p8-8oD"/>
                             <constraint firstItem="XOI-AB-jRd" firstAttribute="centerX" secondItem="4442" secondAttribute="centerX" id="m8L-St-XGa"/>
+                            <constraint firstItem="jdV-s5-vpK" firstAttribute="height" secondItem="4442" secondAttribute="height" multiplier="0.0598592" id="rlf-vH-5KJ"/>
+                            <constraint firstItem="jdV-s5-vpK" firstAttribute="centerX" secondItem="4442" secondAttribute="centerX" id="sz8-0H-KuV"/>
                             <constraint firstItem="uDF-ZU-hL1" firstAttribute="width" secondItem="4442" secondAttribute="width" multiplier="0.14375" id="u3R-ZF-vKq"/>
                             <constraint firstItem="uDF-ZU-hL1" firstAttribute="height" secondItem="4442" secondAttribute="height" multiplier="0.0528169" id="wtN-on-m03"/>
                             <constraint firstItem="gIs-ur-qbV" firstAttribute="width" secondItem="4442" secondAttribute="width" multiplier="0.75" id="wzR-4c-j8Q"/>
@@ -279,8 +280,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xwy-Dj-khT">
-                                <rect key="frame" x="122" y="403" width="97" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xwy-Dj-khT">
+                                <rect key="frame" x="111.5" y="267" width="97" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -288,12 +289,12 @@
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNb-Ib-cOZ">
-                                <rect key="frame" x="147" y="491" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNb-Ib-cOZ">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEo-CX-62b">
-                                <rect key="frame" x="157" y="501" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kEo-CX-62b">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
@@ -351,8 +352,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIS-1p-1ex">
-                                <rect key="frame" x="122" y="403" width="97" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIS-1p-1ex">
+                                <rect key="frame" x="111.5" y="267" width="97" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -360,12 +361,12 @@
                                 <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kx-Ln-iqt">
-                                <rect key="frame" x="147" y="491" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kx-Ln-iqt">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OE-2b-Hsb">
-                                <rect key="frame" x="157" y="501" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1OE-2b-Hsb">
+                                <rect key="frame" x="137" y="269" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                             </button>
                         </subviews>
