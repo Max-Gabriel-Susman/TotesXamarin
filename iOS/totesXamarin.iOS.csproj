@@ -118,6 +118,26 @@
     </Compile>
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Main.cs" />
+    <Compile Include="ViewControllers\AuthenticationViewController.cs" />
+    <Compile Include="ViewControllers\AuthenticationViewController.designer.cs">
+      <DependentUpon>AuthenticationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\RegistrationViewController.cs" />
+    <Compile Include="ViewControllers\RegistrationViewController.designer.cs">
+      <DependentUpon>RegistrationViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\EditAccountViewController.cs" />
+    <Compile Include="ViewControllers\EditAccountViewController.designer.cs">
+      <DependentUpon>EditAccountViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\AccountViewController.cs" />
+    <Compile Include="ViewControllers\AccountViewController.designer.cs">
+      <DependentUpon>AccountViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\TransactionDetailViewController.cs" />
+    <Compile Include="ViewControllers\TransactionDetailViewController.designer.cs">
+      <DependentUpon>TransactionDetailViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
@@ -127,6 +147,11 @@
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="ViewControllers\EditAccountViewController.xib" />
+    <InterfaceDefinition Include="ViewControllers\AccountViewController.xib" />
+    <InterfaceDefinition Include="ViewControllers\RegistrationViewController.xib" />
+    <InterfaceDefinition Include="ViewControllers\authenticationViewController.xib" />
+    <InterfaceDefinition Include="ViewControllers\TransactionDetailViewController.xib" />
   </ItemGroup>
   <Import Project="..\totesXamarin\totesXamarin.projitems" Label="Shared" Condition="Exists('..\totesXamarin\totesXamarin.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
